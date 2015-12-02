@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FromNibView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdw-6C-taM">
+                    <rect key="frame" x="11" y="70" width="579" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRl-4R-F8m">
+                    <rect key="frame" x="273" y="132" width="55" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Tap Me!"/>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Cdw-6C-taM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="HTb-XZ-V6l"/>
+                <constraint firstAttribute="trailing" secondItem="Cdw-6C-taM" secondAttribute="trailing" constant="10" id="M1N-3I-FqJ"/>
+                <constraint firstItem="PRl-4R-F8m" firstAttribute="top" secondItem="Cdw-6C-taM" secondAttribute="bottom" constant="41" id="dLe-xl-JM8"/>
+                <constraint firstItem="PRl-4R-F8m" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="daF-D3-ksz"/>
+                <constraint firstItem="Cdw-6C-taM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="pjG-kb-rpZ"/>
+            </constraints>
+            <connections>
+                <outlet property="actionButton" destination="PRl-4R-F8m" id="TD7-Xn-Sz9"/>
+                <outlet property="titleLabel" destination="Cdw-6C-taM" id="VcR-ZW-5hn"/>
+            </connections>
+        </view>
+    </objects>
+</document>

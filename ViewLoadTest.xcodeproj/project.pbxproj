@@ -13,6 +13,8 @@
 		49EE539C1C0BA5CC0027E843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EE539A1C0BA5CC0027E843 /* Main.storyboard */; };
 		49EE539E1C0BA5CC0027E843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EE539D1C0BA5CC0027E843 /* Assets.xcassets */; };
 		49EE53A11C0BA5CC0027E843 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49EE539F1C0BA5CC0027E843 /* LaunchScreen.storyboard */; };
+		49EE53AB1C0BA61E0027E843 /* FromNibView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EE53AA1C0BA61E0027E843 /* FromNibView.m */; };
+		49EE53AD1C0BA62F0027E843 /* FromNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EE53AC1C0BA62F0027E843 /* FromNibView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		49EE539D1C0BA5CC0027E843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49EE53A01C0BA5CC0027E843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49EE53A21C0BA5CC0027E843 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49EE53A91C0BA61E0027E843 /* FromNibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromNibView.h; sourceTree = "<group>"; };
+		49EE53AA1C0BA61E0027E843 /* FromNibView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromNibView.m; sourceTree = "<group>"; };
+		49EE53AC1C0BA62F0027E843 /* FromNibView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FromNibView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		49EE53901C0BA5CC0027E843 /* ViewLoadTest */ = {
 			isa = PBXGroup;
 			children = (
+				49EE53A81C0BA6000027E843 /* Views */,
 				49EE53941C0BA5CC0027E843 /* AppDelegate.h */,
 				49EE53951C0BA5CC0027E843 /* AppDelegate.m */,
 				49EE53971C0BA5CC0027E843 /* ViewController.h */,
@@ -77,6 +83,16 @@
 				49EE53921C0BA5CC0027E843 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49EE53A81C0BA6000027E843 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49EE53A91C0BA61E0027E843 /* FromNibView.h */,
+				49EE53AA1C0BA61E0027E843 /* FromNibView.m */,
+				49EE53AC1C0BA62F0027E843 /* FromNibView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49EE53AD1C0BA62F0027E843 /* FromNibView.xib in Resources */,
 				49EE53A11C0BA5CC0027E843 /* LaunchScreen.storyboard in Resources */,
 				49EE539E1C0BA5CC0027E843 /* Assets.xcassets in Resources */,
 				49EE539C1C0BA5CC0027E843 /* Main.storyboard in Resources */,
@@ -149,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49EE53AB1C0BA61E0027E843 /* FromNibView.m in Sources */,
 				49EE53991C0BA5CC0027E843 /* ViewController.m in Sources */,
 				49EE53961C0BA5CC0027E843 /* AppDelegate.m in Sources */,
 				49EE53931C0BA5CC0027E843 /* main.m in Sources */,
